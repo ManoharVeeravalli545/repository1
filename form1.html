@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Registration Form</title>
+	<style>
+		.body{
+			background-color: yellow;
+		}
+		.a{
+			align-content: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="a">
+		<h2>Register here</h2><br><br>
+		<form action="main.jsp" method="POST">
+			<label>Name : </label>
+			<input type="text" name="name" placeholder="Enter name"><br><br>
+			<label>Mobile Number : </label>
+			<input type="text" name="mobileNumber" placeholder="Enter Mobile Number"><br><br>
+			<p>Choice of course : </p>
+			<input type="radio" id="Bachelors" name="choiceOfCourse" value="Bachelors">
+			<label for="Bachelors">Bachelors</label><br>
+			<input type="radio" id="Masters" name="choiceOfCourse" value="Masters">
+			<label for="Masters">Masters</label>
+			<br><br>
+			<label>Description :</label><br>
+			<textarea name="desc" rows="10" cols="30"></textarea><br><br>
+			<p>Subject Intrests : </p>
+			<input type="checkbox" id="dmt" name="dmt" value="dmt">
+			<label for="dmt">Data Mining Techniques</label><br>
+			<input type="checkbox" id="cn" name="cnn" value="cn">
+			<label for="cn">Computer Networks</label><br>
+			<input type="checkbox" id="cc" name="cc" value="cc">
+			<label for="cc">Cloud Computing</label><br><br>
+			<input type="submit" name="submit">
+		</form>
+	</div>
+</body>
+</html>

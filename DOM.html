@@ -1,0 +1,70 @@
+<html lang="en" dir="ltr">
+  <head>
+   
+    <title>Fibonacci series</title>
+  </head>
+
+  <body>
+
+
+      <script>
+
+          var num =parseInt (prompt("Enter a number between 10-100"))
+
+          if (num >=10 && num<=100)
+          {
+
+            document.write("The number is in range 10-100 <br>");
+            var n1=parseInt(0),n2=parseInt(1);
+            document.write("Fib series upto "+num+" elements<br>")
+
+
+            let arr = [0, 1];
+            for (let i = 2; i < num + 1; i++){
+              arr.push(arr[i - 2] + arr[i -1])
+            }
+            document.write(arr);
+            }
+
+          else
+          {
+            document.write("The number is not in th range 10-100 <br>");
+          }
+
+          try{
+            if (num == 0) throw "0";
+        }
+        catch(eer)
+        {
+          document.write("<h2>your input is ZERO brooo</h2>")
+        }
+        document.write("<br>5th word, 7th word and 10th word of the given text are:<br>");
+        var s="The language was initially called LiveScript and was later renamed JavaScript. There are many programmers who think that JavaScript and Java are the same. In fact, JavaScript and Java are very much unrelated. Java is a very complex programming language whereas JavaScript is only a scripting language. The syntax of JavaScript is mostly influenced by the programming language C.";
+        var res=s.split(" ");
+        document.write("<br>5th , 7th ,11th elements in desc are:");
+        document.write("<br>"+res[5]+"<br>"+res[7]+"<br>"+res[10]);
+
+
+	var date=new Date();
+	alert(date);
+	console.log(date);
+	function displayDate() {
+	  document.getElementById("demo").innerHTML = Date();
+	}
+	function mo(){
+		alert("mouseOverEvent");
+	}
+	
+       
+        </script>
+
+<h3>Printing Date in console</h3>
+	<h2>
+		<button onclick="displayDate()">The time is</button>
+		<button onmouseover="mo()">Hover your mouse here</button>
+		<p id="demo"></p>
+		<br>
+	</h2>
+
+  </body>
+</html>

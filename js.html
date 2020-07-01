@@ -1,0 +1,49 @@
+<html>
+<head>
+<script>
+var a=2;
+var b=4;
+console.log(a);
+console.log(b);
+var arr = [1,2,3,4,5];
+document.write(arr[3]);
+document.write("<br>");
+
+var str =arr.join();
+document.write("The String is"+arr.toString());
+document.write("<h4>Printing Total and Average of marks:</h4><br>");
+var subjectnames=["Compiler Design","Web technologies","Software Engineering","Operating Systems","Distributed Systems","Embedded Systems"];
+var subjectmarks=[86,82,80,86,80,70];
+var total=86+82+80+86+80+70;
+var average=(total)/6;
+document.write("<table>");
+document.write("<tr><td>"+subjectnames[0]+"</td><td>"+subjectmarks[0]+"</td></tr>");
+document.write("<tr><td>"+subjectnames[1]+"</td><td>"+subjectmarks[1]+"</td></tr>");
+document.write("<tr><td>"+subjectnames[2]+"</td><td>"+subjectmarks[2]+"</td></tr>");
+document.write("<tr><td>"+subjectnames[3]+"</td><td>"+subjectmarks[3]+"</td></tr>");
+document.write("<tr><td>"+subjectnames[4]+"</td><td>"+subjectmarks[4]+"</td></tr>");
+document.write("<tr><td>"+subjectnames[5]+"</td><td>"+subjectmarks[5]+"</td></tr>");
+document.write("<tr><td>"+"Total"+"</td><td>"+total+"</td></tr>");
+document.write("<tr><td>"+"Average"+"</td><td>"+average+"</td></tr></table><br><br>");
+
+
+
+document.write("square root of 4 is:"+Math.sqrt(4)); 
+document.write("<br> Randam no is:" +Math.random()); 
+document.write("<br> power is:"+Math.pow(2,4));   
+document.write("<br> floor is:" +Math.floor(4.6));
+document.write("<br> ceil is:"+Math.ceil(4.6));
+document.write("<br> Round of no is:"+Math.round(4.6));
+document.write("<br> absolute no is"+Math.abs(-4));
+
+function multiply(a,b=1)
+{
+return a*b;
+}
+document.write(multiply(10,3));
+
+
+
+</script>
+</head>
+</html>
